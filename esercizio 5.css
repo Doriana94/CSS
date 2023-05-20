@@ -1,0 +1,125 @@
+
+.container {   
+    display: grid;
+    width: 400px;
+    height: 450px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 0.9fr repeat(5, 1fr);
+    grid-template-areas: 'display display display display'
+                         'add sub mult div'
+                         'seven eight nine equal'
+                         'four five six equal'
+                         'one two three equal'
+                         'zero dot ac equal';   
+    gap:  3px;
+    background-color: #434B54;
+    border-radius: 20px;
+    box-shadow: 0 0 5px 1px black;
+    margin: 0 auto;
+}
+
+#display{
+    grid-area: display;
+    background-color: #434B54;
+   border-top-right-radius: 20px;
+   border-top-left-radius: 20px;
+   text-align: right;
+   padding-top: 15px;
+   padding-right: 10px;
+}
+
+.disp{
+    font-size: 30px;
+    color: white;
+}
+
+.operator{
+    text-align: center;
+    background-color: #b0d4e3;
+    font-weight: bold;
+    font-size: 25px;
+    padding-top: 20px;
+    text-align: center;
+
+}
+
+.number{
+    background-color: whitesmoke;
+    font-weight: bold;
+    font-size: 20px;
+    padding-top: 20px;
+    text-align: center;   
+}
+#addizione{
+    grid-area: add;
+}
+
+#sottrazione{
+    grid-area: sub;
+}
+
+#moltiplicazione{
+    grid-area: mult;
+}
+
+#divisione{
+    grid-area: div;
+}
+
+#seven{
+    grid-area: seven;
+}
+
+#equal{
+    grid-area: equal;
+    background-color: lightcoral;
+  border-bottom-right-radius: 20px;
+  font-weight: bold;
+  font-size: 25px;
+  padding-top: 125px;
+  text-align: center;
+}
+
+#nine{
+    grid-area: nine;
+}
+
+#four{
+    grid-area: four;
+}
+
+
+#five{
+    grid-area: five;
+}
+
+
+#six{
+    grid-area: six;
+}
+
+
+#one{
+    grid-area: one;
+}
+
+#two{
+    grid-area: two;
+}
+
+#three{
+    grid-area: three;
+}
+
+#zero{
+    grid-area: zero;
+    border-bottom-left-radius: 20px;
+}
+
+#dot{
+    grid-area: dot;
+}
+
+#ac{
+    grid-area: ac;
+}
