@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    background-color: black;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 10px;
+    background-color: #22252A;
+    width: 100%;
+    border-bottom: 1px solid white;
+    margin: 20px 20px;
+}
+
+nav li{
+   display: inline-block;
+     padding: 10px 20px;
+     position: relative;
+}
+
+#main_menu{
+   margin-right: auto;
+}
+
+#sub_menu{
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #22252A;
+    width: 100px;
+    opacity: 0;
+    visibility: hidden;
+    margin-right: auto;
+}
+
+#sub_menu li a{
+    color: rgba(211, 211, 211, 0.552);
+    display: block;
+    padding-left: 5px;
+
+}
+
+h1{
+    color:white;
+    padding-right: 40px;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: normal;
+}
+
+#home{
+    color: white;
+
+}
+
+.fa{
+    padding-left: 5px;
+    display: none;
+   
+   
+}
+
+#link, #dropdown{
+    color: rgba(211, 211, 211, 0.552) ;
+}
+
+#disabled{
+    color: rgba(136, 135, 135, 0.5);
+}
+#search{
+  margin-right: 700px;
+}
+
+#search_bar, #button{
+    border-radius: 5px;
+    padding: 5px;
+    padding-left: 10px;
+    border: none;
+  
+    
+  
+}
+
+#button{
+   border: 1px solid green;
+    padding: 7px;
+    color: green;
+    background-color: transparent;
+ margin-left: 5px;
+}
+
+#button:hover{
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid green;
+    color: green;
+    transition: all 1s ease;
+}
+
+#prova:hover #sub_menu {
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.5s ease;
+    top: 50px
+ }
+
+ @media screen and (max-width: 768px) {
+    #main_menu, form {
+        display: none;
+    }
+}
